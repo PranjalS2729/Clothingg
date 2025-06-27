@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>xyz | About</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.1.0/tsparticles.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-stars@3.1.0/dist/tsparticles.preset.stars.min.js"></script>
+</head>
+<body>
+<div id="tsparticles"></div>
+<header>
+    <div class="logo">xyz</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="#" id="cartLink">Cart (<span id="cartCount">0</span>)</a>
+        <a href="#" id="loginBtn">Login</a>
+    </nav>
+</header>
+
+<section class="about">
+    <h1>Our Story</h1>
+    <p>Born from a love for couture and craftsmanship, xyz brings contemporary design together with time‑honoured tailoring. We believe in timeless style, ethical sourcing, and garments that empower.</p>
+    <p>Every piece celebrates individuality—because luxury is personal.</p>
+</section>
+<section class="gallery">
+    <img src="https://images.unsplash.com/photo-1514997130083-752d3e2a97f2?auto=format&fit=crop&w=800&q=80" alt="Runway" />
+    <img src="https://images.unsplash.com/photo-1495121605193-b116b5b09d65?auto=format&fit=crop&w=800&q=80" alt="Tailoring" />
+    <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=800&q=80" alt="Fabric" />
+</section>
+
+<footer>
+    <p>&copy; 2025 xyz Clothing. All rights reserved.</p>
+</footer>
+
+<!-- Login Modal -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span id="closeLogin" class="close">&times;</span>
+        <h2>Login / Register</h2>
+        <form id="loginForm">
+            <input type="email" placeholder="Email" required />
+            <input type="password" placeholder="Password" required />
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<script>
+    // stars preset
+    tsParticles.load('tsparticles', {
+      preset: 'stars',
+      background: {
+        color: '#000'
+      },
+      particles: {
+        color: {
+          value: '#d4af37'
+        }
+      }
+    });
+</script>
+</body>
+</html>

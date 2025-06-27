@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>xyz | Fabrics</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.1.0/tsparticles.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-stars@3.1.0/dist/tsparticles.preset.stars.min.js"></script>
+</head>
+<body>
+<div id="tsparticles"></div>
+<header>
+    <div class="logo">xyz</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="#" id="cartLink">Cart (<span id="cartCount">0</span>)</a>
+        <a href="#" id="loginBtn">Login</a>
+    </nav>
+</header>
+
+    <section class="products">
+        <h1>Fabric Boutique</h1>
+        <div class="product-grid">
+            
+        <div class="fabric-card">
+            <img src="https://images.unsplash.com/photo-1514986888952-8cd320577bde?auto=format&fit=crop&w=600&q=80" alt="Pure Silk">
+            <h3>Pure Silk</h3>
+            <p>Luxuriously smooth with a natural sheen.</p>
+            <button class="btn add-to-cart" data-id="fabric1" data-name="Pure Silk" data-price="1999">Add to Cart</button>
+        </div>
+    
+        <div class="fabric-card">
+            <img src="https://images.unsplash.com/photo-1593032465171-8ed7b2f195c2?auto=format&fit=crop&w=600&q=80" alt="Egyptian Cotton">
+            <h3>Egyptian Cotton</h3>
+            <p>Breathable weave ideal for all‑day comfort.</p>
+            <button class="btn add-to-cart" data-id="fabric2" data-name="Egyptian Cotton" data-price="1999">Add to Cart</button>
+        </div>
+    
+        <div class="fabric-card">
+            <img src="https://images.unsplash.com/photo-1518540210213-a46d81b7dc08?auto=format&fit=crop&w=600&q=80" alt="Irish Linen">
+            <h3>Irish Linen</h3>
+            <p>Crisp texture that keeps you cool in summer.</p>
+            <button class="btn add-to-cart" data-id="fabric3" data-name="Irish Linen" data-price="1999">Add to Cart</button>
+        </div>
+    
+        <div class="fabric-card">
+            <img src="https://images.unsplash.com/photo-1555529578-aa20b4d44e32?auto=format&fit=crop&w=600&q=80" alt="Cashmere Blend">
+            <h3>Cashmere Blend</h3>
+            <p>Impossibly soft wool blend for luxe layering.</p>
+            <button class="btn add-to-cart" data-id="fabric4" data-name="Cashmere Blend" data-price="1999">Add to Cart</button>
+        </div>
+    
+        </div>
+    </section>
+
+<footer>
+    <p>&copy; 2025 xyz Clothing. All rights reserved.</p>
+</footer>
+
+<!-- Login Modal -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span id="closeLogin" class="close">&times;</span>
+        <h2>Login / Register</h2>
+        <form id="loginForm">
+            <input type="email" placeholder="Email" required />
+            <input type="password" placeholder="Password" required />
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<script>
+    // stars preset
+    tsParticles.load('tsparticles', {
+      preset: 'stars',
+      background: {
+        color: '#000'
+      },
+      particles: {
+        color: {
+          value: '#d4af37'
+        }
+      }
+    });
+</script>
+</body>
+</html>
